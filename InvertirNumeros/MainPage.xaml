@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InvertirNumeros.MainPage">
+
+    <ScrollView >
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="ejercicio1.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+            
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" 
+                FontFamily="Arial"/>
+
+            <Label
+                TextColor="Aqua"
+                Text="Invertir Numeros"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multplatform App U I"
+                FontSize="40"
+                HorizontalOptions="Center"
+                FontFamily="Arial"/>
+
+            <Entry Placeholder="Introduce el data A" x:Name="datoA" />
+            <Entry Placeholder="Introduce el data B" x:Name="datoB"/>
+            <Entry Placeholder="Introduce el data C" x:Name="datoC"/>
+            <Entry Placeholder="Introduce el data D" x:Name="datoD"/>
+            <Button Text="Invierte" x:Name="btnInvertir" Clicked="btnInvertir_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
